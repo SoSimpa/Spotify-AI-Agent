@@ -1,0 +1,15 @@
+{
+
+  "mcpServers": {
+
+    "spotify": {
+
+      "command": "node",
+
+      "args": ["C:\\Users\\ImAVu\\OneDrive - Michigan State University\\Desktop\\Spotify Agent\\spotify-mcp-server\\build\\index.js"]
+
+    }
+
+  }
+
+}
