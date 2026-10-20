@@ -1,7 +1,19 @@
 [project]
 name = "spotify-ai-agent"
 version = "0.1.0"
-description = "Add your description here"
+description = "AI Agent that assists in making Spotify playlists tailored to the user's preferences"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "requests",
+    "python-dotenv",
+    "langchain-groq",
+    "langgraph",
+    "langchain-core",
+    "mcp-use",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+]
