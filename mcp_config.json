@@ -1,15 +1,17 @@
 {
-
   "mcpServers": {
-
     "spotify": {
-
-      "command": "node",
-
-      "args": ["C:\\Users\\ImAVu\\OneDrive - Michigan State University\\Desktop\\Spotify Agent\\spotify-mcp-server\\build\\index.js"]
-
+      "command": "uvx",
+      "args": [
+        "--python", "3.12",
+        "--from", "git+https://github.com/varunneal/spotify-mcp",
+        "spotify-mcp"
+      ],
+      "env": {
+        "SPOTIFY_CLIENT_ID": "${SPOTIFY_CLIENT_ID}",
+        "SPOTIFY_CLIENT_SECRET": "${SPOTIFY_CLIENT_SECRET}",
+        "SPOTIFY_REDIRECT_URI": "${SPOTIFY_REDIRECT_URI}"
+      }
     }
-
   }
-
 }
